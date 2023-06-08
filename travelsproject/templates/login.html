@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .file{
+            background-color: burlywood;
+            text-align: center;
+        }
+    </style>
+<title>Login</title>
+</head>
+<body>
+    <h2 style="color: brown;text-align: center;background-color: burlywood;">Login</h2>
+    <form  action="login" method="post" class="file">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="enter username"><br>
+        <input type="text" name="password" placeholder="enter password"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
